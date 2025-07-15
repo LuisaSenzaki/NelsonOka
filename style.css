@@ -11,6 +11,8 @@ body {
     padding: 0;
 }
 
+/* header */
+
 header {
     background-color: #4B6382;
     display: flex;
@@ -33,9 +35,32 @@ header a {
     text-decoration: none;
 }
 
+/* footer */
+
 footer {
-    background-color: black;
+    background-color: #A68868;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 65px;
 }
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.line-footer {
+    width: 100%;
+}
+
+.infos {
+    color: white;
+    margin: 0;
+}
+
+
 
 /* page initial */
 
