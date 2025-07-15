@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "futura-now-text-rg";
+    src: url("./fonts/futura-now-text-rg.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "futura-now-text-rg";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4B6382;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 65px;
+    align-items: center;    
+}
+
+header .options {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
