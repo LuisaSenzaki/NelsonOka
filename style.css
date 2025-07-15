@@ -32,3 +32,36 @@ header a {
     color: white;
     text-decoration: none;
 }
+
+footer {
+    background-color: black;
+}
+
+/* page initial */
+
+.initial {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    background: url("./assets/sasun-bughdaryan-ozS0tPf8QT0-unsplash.jpg") no-repeat center/cover;
+}
+
+.title-first {
+    padding: 5px 65px;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
+
+.btn-contato {
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #A68868;
+    width: 200px;
+    margin-left: 65px;
+    border-radius: 1000px;
+}
