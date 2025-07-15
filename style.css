@@ -65,3 +65,31 @@ footer {
     margin-left: 65px;
     border-radius: 1000px;
 }
+
+#quem-somos{
+   padding: 10px 65px;
+   font-size: 20px;
+}
+
+.line{
+    color: #4B6382;
+    width: 100px;
+}
+
+.title-quemsomos{
+    color: #4B6382;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.img-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.line-page {
+    padding: 10px 65px;
+    color: #4B6382;
+}
