@@ -6,16 +6,10 @@
     <title>Nelson Oka</title>
 
     <link rel="stylesheet" href="./style.css" />
+
 </head>
 <body>
-    <header>
-        <img src="./assets/header.png">
-        <ul>
-            <li>Quem Somos</li>
-            <li>Atuações</li>
-            <li>Contato</li>
-        </ul>
-    </header>
+    <div id="header"></div>
 
     <section class="initial">
         <h2>Advocacia especializada em<br>Direito Civil e de Família</h2>
@@ -85,8 +79,8 @@
         </div>
     </div>
 
-    <footer>
-        <div class="information">
+    <div id="footer">
+        <!-- <div class="information">
             <img src="./assets/header.png">
             <hr>
             <div class="infos">
@@ -105,12 +99,27 @@
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                     </svg>
                 </a>
-            </div>
+            </div> -->
         </div>
 
         <div class="maps">
             google maps
         </div>
-    </footer>
+    </div>
+
+    <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
