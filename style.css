@@ -42,6 +42,33 @@ header .options {
     justify-content: space-between;
 }
 
+header .options a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+header .options a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+
+header .options a:hover::after {
+    width: 100%;
+}
+
+header .options a.active::after {
+    width: 100%;
+}
+
 header a {
     font-size: 18px;
     color: white;
