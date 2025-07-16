@@ -5,6 +5,7 @@
     font-style: normal;
 }
 
+
 html {
     height: 100vh;
     scroll-behavior: smooth;
@@ -20,16 +21,22 @@ body {
 /* header */
 
 header {
+    box-sizing: border-box;
     background-color: #4B6382;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 65px;
-    align-items: center;    
+    align-items: center;   
+    position: fixed;
+    top: 0;          
+    width: 100%;     
+    z-index: 1000;
+
 }
 
 header .options {
-    width: 600px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,6 +99,10 @@ footer {
 
 /* page initial */
 
+.page-total {
+    padding-top: 70px;
+}
+
 .initial {
     gap: 10px;
     display: flex;
@@ -120,7 +131,7 @@ footer {
 }
 
 #quem-somos{
-   padding: 10px 65px;
+   padding: 55px 65px;
    font-size: 20px;
 }
 
@@ -148,7 +159,7 @@ footer {
 }
 
 #atuacao {
-    padding: 10px 65px;
+    padding: 55px 65px;
 }
 
 .container-all{
