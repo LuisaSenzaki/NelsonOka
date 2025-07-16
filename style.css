@@ -147,6 +147,7 @@ footer {
 
 .container-all{
     display: flex;
+    margin-bottom: 60px;
     flex-direction: row;
     gap: 50px;
     padding: 10px 65px;
