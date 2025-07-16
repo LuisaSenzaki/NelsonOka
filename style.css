@@ -184,11 +184,61 @@ footer {
 /* contact page */
 
 .container-page {
-     display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+     min-height: 80vh;
+    min-height: 100vh;
 }
 
 .hero {
     flex: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 65vh; 
+}
+
+.chanels {
+    padding: 5px 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.whatsapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4B6382;
+    width: 120px;
+    height: 125px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.title-contact {
+    color: #4B6382;
+    margin: 5px;
+    font-size: 20px;
+    
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4B6382;
+    width: 120px;
+    height: 125px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.description{
+    font-size: 18px;
 }
