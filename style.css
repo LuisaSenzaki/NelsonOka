@@ -41,7 +41,12 @@ footer {
     background-color: #A68868;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 5px 65px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .information {
@@ -55,12 +60,29 @@ footer {
     width: 100%;
 }
 
-.infos {
+.infos p {
     color: white;
     margin: 0;
+    font-size: 10px;
 }
 
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.social a {
+    text-decoration: none;
+}
+
+.maps {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
 /* page initial */
 
