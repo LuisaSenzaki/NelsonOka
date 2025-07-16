@@ -248,7 +248,7 @@ footer {
     min-height: 65vh; 
 }
 
-.chanels {
+#chanels {
     padding: 5px 65px;
     display: flex;
     flex-direction: row;
@@ -305,6 +305,10 @@ footer {
 #email:active{
     background-color: #CAE1FF;
     transform: translateY(1px);
+}
+
+#email.selecionado {
+    background-color: #CAE1FF;
 }
 
 .description{
