@@ -41,7 +41,7 @@
       <!-- sessão de informações para opção de email -->
       <section class="secao-email" id="secaoEmail">
         <p>Preencha os campos abaixo para contato via-email. Responderemos o mais breve possível:</p>
-          <form action="https://formspree.io/f/myzpyagp" method="POST">
+          <form id="contactForm">
             <div class="form-grupo">
               <label for="nome">NOME</label>
               <input type="text" id="nome" name="nome">
@@ -59,6 +59,8 @@
               <textarea id="mensagem" name="mensagem" rows="5"></textarea>
             </div>
             <button type="submit" class="btn-enviar">ENVIAR</button>
+            <p id="mensagemSucesso" style="display: none; color: green; margin-top: 15px;">Mensagem enviada com sucesso!</p>
+            <p id="mensagemErro" style="display: none; color: red; margin-top: 15px;">Erro ao enviar mensagem. Tente novamente.</p>
           </form>
       </section>
 
@@ -95,6 +97,46 @@
         secaoEmail.classList.toggle('ativo');
       });
   });
+
+  //função para enviar as informações do email para o Formspree
+    contactForm.addEventListener('submit', async function(event) {
+        event.preventDefault(); //impede o padrão do formspree
+
+        //oculta mensagens de feedback anteriores
+        mensagemSucesso.style.display = 'none';
+        mensagemErro.style.display = 'none';
+
+        const formUrl = 'https://formspree.io/f/myzpyagp'; //id do formspree - luisa
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(formUrl, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                mensagemSucesso.style.display = 'block'; //mostrar mensagem de sucesso
+                contactForm.reset(); //resetar o formulário
+            } else {
+                //erro no envio pelo Formspree
+                const data = await response.json();
+                if (data.errors) {
+                    mensagemErro.textContent = 'Erro de validação: ' + data.errors.map(e => e.field).join(', ');
+                } else {
+                    mensagemErro.textContent = 'Ocorreu um erro ao enviar a mensagem. Tente novamente.';
+                }
+                mensagemErro.style.display = 'block';
+            }
+        } catch (error) {
+            console.error('Erro na requisição:', error);
+            mensagemErro.textContent = 'Erro de conexão.';
+            mensagemErro.style.display = 'block';
+        }
+    });
   </script>
 </body>
 </html>
