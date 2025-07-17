@@ -419,6 +419,8 @@ footer {
         margin: 0; 
     }
 
+    /* página quem somos - mobile */
+
     .title-first{
         font-size: 25px;
     }
@@ -440,8 +442,19 @@ footer {
     }
 
     .img-logo img{
-    width: 300px;
-    height: auto;
+        width: 300px;
+        height: auto;
+    }
+
+    /* página atuações - mobile */
+
+    #atuacao {
+    padding: 30px 35px;
+    }
+
+    .container-all{
+    flex-direction: column;
+    padding: 5px 5px;
     }
 
 }
