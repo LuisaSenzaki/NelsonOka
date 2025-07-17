@@ -419,4 +419,29 @@ footer {
         margin: 0; 
     }
 
+    .title-first{
+        font-size: 25px;
+    }
+
+    .btn-contato{
+        width: 150px;
+    }
+
+    .btn-contato span{
+        font-size: 15px;
+    }
+
+    #quem-somos{
+        padding: 30px 35px;
+    }
+
+    #quem-somos p{
+        font-size: 14px;
+    }
+
+    .img-logo img{
+    width: 300px;
+    height: auto;
+    }
+
 }
