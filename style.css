@@ -478,4 +478,9 @@ footer {
         margin-bottom: 15px;
     }
 
+    /* pagina contato - mobile */
+    .secao-email {
+    padding: 20px 50px;
+
+    }
 }
