@@ -409,6 +409,11 @@ footer {
         flex: 1; 
     }
 
+    .logo img {
+        width: 105px;
+        height: auto;
+    }
+
     .options {
         flex: 0;
         display: flex;
@@ -482,5 +487,9 @@ footer {
     .secao-email {
     padding: 20px 50px;
 
+    }
+
+    .page-total{
+        padding: 0;
     }
 }
