@@ -137,7 +137,7 @@ footer {
     flex-direction: column;
     height: 250px;
     justify-content: center;
-    background: url("./assets/sasun-bughdaryan-ozS0tPf8QT0-unsplash.jpg") no-repeat center/cover;
+    background: url("./assets/bg-initial.png") no-repeat center/cover;
 }
 
 .title-first {
