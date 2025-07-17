@@ -457,4 +457,20 @@ footer {
     padding: 5px 5px;
     }
 
+    /* footer mobile */
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .information{
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .img-logo-footer img{
+        width: 100px;
+    }
+
+
 }
