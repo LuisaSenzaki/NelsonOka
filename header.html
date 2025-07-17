@@ -13,35 +13,11 @@
             <img src="./assets/header.png">
         </a>
         <div class="options">
-            <a href="index.html#quem-somos">Quem Somos</a>
-            <a href="index.html#atuacao">Atuações</a>
-            <a href="contact.html">Contato</a>
+            <a class="btn-option-quem" href="index.html#quem-somos">Quem Somos</a>
+            <a class="btn-option-atuacao" href="index.html#atuacao">Atuações</a>
+            <a class="btn-option-contato" href="contact.html">Contato</a>
         </div>
     </header>
-
-  <!-- <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('header .options a');
-
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    const currentHash = window.location.hash;
-
-    links.forEach(link => {
-      const href = link.getAttribute('href');
-      const [path, hash] = href.split('#');
-
-      const linkPath = path || 'index.html'; // caso seja só "#id"
-
-      if (
-        currentPath === linkPath &&
-        (hash ? currentHash === '#' + hash : true)
-      ) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script> -->
-
 
 </body>
 </html>

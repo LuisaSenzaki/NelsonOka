@@ -380,3 +380,43 @@ footer {
 .btn-enviar:hover {
     background-color: #5a6268;
 }
+
+@media screen and (max-width: 992px) {
+
+    /* header mobile */
+    .btn-option-atuacao{
+        display: none;
+    }
+
+    .btn-option-quem {
+        display: none;
+    }
+
+    .btn-option-contato {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 5px 20px;
+        justify-content: space-between;
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .logo {
+        flex: 1; 
+    }
+
+    .options {
+        flex: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header > * { 
+        margin: 0; 
+    }
+
+}
